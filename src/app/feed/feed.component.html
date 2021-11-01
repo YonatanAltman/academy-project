@@ -1,16 +1,24 @@
 <div class="feed" appInfinteScroll (loadMore)="loadMore()">
   <h1>Shopping Feed:</h1>
 
-  <input
+  <mat-form-field class="a-mrg-l-4" appearance="outline">
+    <mat-label>Nice search 🔬</mat-label>
+    <input
     matInput
-    placeholder="Seach for your book..."
+    placeholder="Search for your book..."
     (input)="search($event.target.value)"
   />
+  </mat-form-field>
 
 
-  <app-item
-    [item]="itemFromFeed"
-    (addToCart)="addItemToCart($event)"
-    *ngFor="let itemFromFeed of items"
-  ></app-item>
+  <div class="scroll">
+    <div class="grid">
+
+      <app-item
+        [item]="itemFromFeed"
+        (addToCart)="addItemToCart($event)"
+        *ngFor="let itemFromFeed of items"
+      ></app-item>
+    </div>
+  </div>
 </div>

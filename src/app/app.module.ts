@@ -16,6 +16,7 @@ import { ItemModule } from './item/item.module';
 import { ChangeBgColorDirective } from './change-bg-color.directive';
 import { InfinteScrollDirective } from './infinte-scroll.directive';
 import {LayoutModule} from "./layout/layout.module";
+import {MatListModule} from "@angular/material/list";
 
 
 
@@ -33,7 +34,8 @@ import {LayoutModule} from "./layout/layout.module";
     MatToolbarModule,
     HttpClientModule,
     ItemModule,
-    LayoutModule
+    MatListModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { FeedRoutingModule } from './feed-routing.module';
 import { ItemModule } from '../item/item.module';
 import { InfinteScrollDirective } from '../infinte-scroll.directive';
+import {MatInputModule} from "@angular/material/input";
 
 
 
@@ -17,7 +18,8 @@ import { InfinteScrollDirective } from '../infinte-scroll.directive';
   imports: [
     CommonModule,
     FeedRoutingModule,
-    ItemModule
+    ItemModule,
+    MatInputModule
   ]
 })
 export class FeedModule { }
